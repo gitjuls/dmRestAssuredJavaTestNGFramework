@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All test">
+    <test name="AllPosts">
+        <classes>
+            <class name="com.google.developers.tests.GmailApi">
+                <methods>
+                    <include name="getTheMessage"/>
+                    <exclude name="sendTheMessage"/>
+                    <include name="getListTheMessagesInTheUsersMailbox"/>
+                    <include name="getUserProfile"/>
+                    <include name="setInvalidToken"/>
+                    <include name="setInvalidEmail"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
